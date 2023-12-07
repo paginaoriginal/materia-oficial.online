@@ -228,17 +228,27 @@ flexibility(document.documentElement);
 				<div class="elementor-widget-container">
 							<p style="text-align: center;"><span style="color: #000000;"><b>Se você sair dessa página, não encontrará esse <span style="color: #ff0000;">DESCONTO EXCLUSIVO</span> novamente, faça a sua <span style="color: #ff0000;">ESCOLHA AGORA</span>! Tenho certeza que irá fazer, te vejo do outro lado.</b></span></p>						</div>
 				</div>
-				<script>
-    window.onload = function () {
-        var links = document.getElementsByTagName("a");
-        for (var i = 0, n = links.length; i < n; i++) {
-            var href = links[i].href.trim() +
-                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
-                    document.location.search.replace('?', '').toString();
-            links[i].href = href;
-        }
+<script>
+   let prefix = ["https://checkout.perfectpay.com.br"];
+
+function getParams() {
+    let t = "",
+        e = window.top.location.href,
+        r = new URL(e);
+    if (null != r) {
+        let a = r.searchParams.get("utm_source"),
+            n = r.searchParams.get("utm_medium"),
+            o = r.searchParams.get("utm_campaign"),
+            m = r.searchParams.get("utm_term"),
+            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
     }
-</script>
+    return t
+}! function() {
+    var t = new URLSearchParams(window.location.search);
+    t.toString() && document.querySelectorAll("a").forEach(function(e) {
+        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+    })
+}(); </script>
 					</div>
 		</div>
 							</div>
