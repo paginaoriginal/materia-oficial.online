@@ -253,26 +253,7 @@ Termos de Uso
 </div>
 <p style="margin-top:24px;">
 </p>
-    <script>
-window.onload(() => {
-let param = location.search.slice(1);
-if (param == "") {
-    let hasparam = false;
-} else {
-    var qtd_links = document.querySelectorAll("a").length;
-    var changing = 0;
-    for (changing = 0; changing <= qtd_links; changing++) {
-        var checkout_url = document.querySelectorAll("a")[changing].href;
-
-        if (checkout_url.split('?')[1] === undefined) {
-            document.querySelectorAll("a")[changing].href = checkout_url + "?" + param;
-        } else {
-            document.querySelectorAll("a")[changing].href = checkout_url + "&" + param;
-        }
-    }
-}
-})
-</script>
+<script>(function(){const{href}=window.location;const[baseUrl,hash]=href.split('#');const queryString=(href.includes('?'))?href.slice(href.indexOf('?')):'';if(queryString!==''){const respondiLinks=document.querySelectorAll('a');respondiLinks.forEach(link=>{const{href}=link;link.href=`${href}${queryString}`})}})()</script>
 <link rel="preload" href="https://scripts.converteai.net/11d1a9e8-7429-4afa-b875-e1bb89cc7a3d/players/6574d67032ca9a0009798e5c/player.js" as="script">
 <link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
 <link rel="preload" href="https://images.converteai.net/11d1a9e8-7429-4afa-b875-e1bb89cc7a3d/players/6574d67032ca9a0009798e5c/thumbnail.jpg" as="image">
