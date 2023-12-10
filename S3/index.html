@@ -253,7 +253,17 @@ Termos de Uso
 </div>
 <p style="margin-top:24px;">
 </p>
-<script>(function(){const{href}=window.location;const[baseUrl,hash]=href.split('#');const queryString=(href.includes('?'))?href.slice(href.indexOf('?')):'';if(queryString!==''){const respondiLinks=document.querySelectorAll('a');respondiLinks.forEach(link=>{const{href}=link;link.href=`${href}${queryString}`})}})()</script>
+<script>
+    window.onload = function () {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0, n = links.length; i < n; i++) {
+            var href = links[i].href.trim() +
+                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
+                    document.location.search.replace('?', '').toString();
+            links[i].href = href;
+        }
+    }
+</script>
 <link rel="preload" href="https://scripts.converteai.net/11d1a9e8-7429-4afa-b875-e1bb89cc7a3d/players/6574d67032ca9a0009798e5c/player.js" as="script">
 <link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
 <link rel="preload" href="https://images.converteai.net/11d1a9e8-7429-4afa-b875-e1bb89cc7a3d/players/6574d67032ca9a0009798e5c/thumbnail.jpg" as="image">
