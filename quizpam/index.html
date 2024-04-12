@@ -1,0 +1,420 @@
+<!DOCTYPE html><html lang="pt-br"><!-- Mirrored from quizpampersbrasil.online/pampers/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 22:24:40 GMT --><head>
+
+  <script async="" src="js/fbevents.js"></script><script src="js/latest.js" async="" defer=""></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <script src="js/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="favicon.html" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.html">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <title>Questionário Pampers</title>
+  <script src="../../cdn.utmify.com.br/scripts/utms/latest.js" async="" defer=""></script>
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'../../connect.facebook.net/en_US/fbevents.js');
+fbq('init', '943085610347468');
+fbq('track', 'PageView');
+</script></head><!-- Meta Pixel Code -->
+
+<body>
+<!-- End Meta Pixel Code -->
+
+  <header>
+    <i class="fa-solid fa-bars" style="color: white"></i>
+    <!-- <img src="assets/images/google_logo.svg" alt=""> -->
+    <img src="images/White__1_.svg" alt="">
+    <span id="saldo" style="margin-left: auto"></span>
+  </header>
+  <main>
+    <div class="card pergunta01" id="pergunta01">
+      <div class="card__logo">
+        <img src="images/cacau1.png" alt="">
+      </div>
+      <div class="card__satisfacao">
+        <h2>De 0 a 5, como você avaliaria sua familiaridade com a marca Pampers?</h2>
+        <div class="card__gradeContainer">
+          <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star1"></i>
+          </div>
+          <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star2"></i>
+          </div>
+          <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star3"></i>
+          </div>
+          <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star4"></i>
+          </div>
+          <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star5"></i>
+          </div>
+        </div>
+        <div class="card__gradeDescricao">
+          <p>Muito ruim</p>
+          <p>Muito bom</p>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>
+          Quando pensa na Pampers, qual a primeira palavra que vem na sua
+          mente?
+        </h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Conforto</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Segurança</p>
+          </div>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>Qual imagem você associa a Pampers?</h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Bebês confortáveis</p>
+          </div>
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Qualidade</p>
+          </div>
+        </div>
+      </div>
+      <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta01()" disabled="">
+        Enviar avaliação
+      </button>
+    </div>
+    <div class="card pergunta02" id="pergunta02" style="display: none">
+      <div class="card__logo">
+        <img src="images/cacau2.png" alt="">
+      </div>
+      <div class="card__satisfacao">
+        <h2>
+          De 0 a 5, como você avaliaria a qualidade das fraldas da Pampers que já experimentou?
+        </h2>
+        <div class="card__gradeContainer">
+          <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star1"></i>
+          </div>
+          <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star2"></i>
+          </div>
+          <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star3"></i>
+          </div>
+          <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star4"></i>
+          </div>
+          <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star5"></i>
+          </div>
+        </div>
+        <div class="card__gradeDescricao">
+          <p>Muito ruim</p>
+          <p>Muito bom</p>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>
+          Como você prefere usar as fraldas da Pampers?
+        </h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Para presentear</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Para a minha criança</p>
+          </div>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>Qual produto da Pampers faz sua criança se sentir mais acolhido(a)?</h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Fraldas</p>
+          </div>
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Lenços umedecidos</p>
+          </div>
+        </div>
+      </div>
+      <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta02()" disabled="">
+        Enviar avaliação
+      </button>
+    </div>
+
+    <div class="card pergunta03" id="pergunta03" style="display: none">
+      <div class="card__logo">
+        <img src="images/cacau3.png" alt="">
+      </div>
+      <div class="card__satisfacao">
+        <h2>De 0 a 5, como você avalia a experiência de presentear alguém com produtos da Pampers?</h2>
+        <div class="card__gradeContainer">
+          <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star1"></i>
+          </div>
+          <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star2"></i>
+          </div>
+          <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star3"></i>
+          </div>
+          <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star4"></i>
+          </div>
+          <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star5"></i>
+          </div>
+        </div>
+        <div class="card__gradeDescricao">
+          <p>Muito ruim</p>
+          <p>Muito bom</p>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>Com quem você adora compartilhar os produtos da Pampers?</h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Meus Filhos</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Outras Crianças</p>
+          </div>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>
+          Qual produto da Pampers você escolheria para presentear alguém
+          especial?
+        </h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Loções de banho e cremes</p>
+          </div>
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Fraldas e lenços</p>
+          </div>
+        </div>
+      </div>
+      <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta03()" disabled="">
+        Enviar avaliação
+      </button>
+    </div>
+
+    <div class="card pergunta04" id="pergunta04" style="display: none">
+      <div class="card__logo">
+        <img src="images/cacau4.png" alt="">
+      </div>
+      <div class="card__satisfacao">
+        <h2>De 0 a 5, quão importante é a conexão emocional com a marca Pampers para você?</h2>
+        <div class="card__gradeContainer">
+          <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star1"></i>
+          </div>
+          <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star2"></i>
+          </div>
+          <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star3"></i>
+          </div>
+          <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star4"></i>
+          </div>
+          <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star5"></i>
+          </div>
+        </div>
+        <div class="card__gradeDescricao">
+          <p>Muito ruim</p>
+          <p>Muito bom</p>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>Qual experiência com a Pampers você gostaria de vivenciar?</h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Uma viagem com tudo pago</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Parque de diversões com as crianças</p>
+          </div>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>O que torna a Pampers especial para você?</h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>A qualidade dos produtos</p>
+          </div>
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>A conexão emocional e as memórias afetivas</p>
+          </div>
+        </div>
+      </div>
+      <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta04()" disabled="">
+        Enviar avaliação
+      </button>
+    </div>
+
+    <div class="card pergunta05" id="pergunta05" style="display: none">
+      <div class="card__logo">
+        <img src="cacau5.html" alt="">
+      </div>
+      <div class="card__satisfacao">
+        <h2>
+          De 0 a 5, quão entusiasmado(a) você estaria por novos produtos inovadores da Pampers?
+        </h2>
+        <div class="card__gradeContainer">
+          <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star1"></i>
+          </div>
+          <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star2"></i>
+          </div>
+          <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star3"></i>
+          </div>
+          <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star4"></i>
+          </div>
+          <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+            <i class="fa-regular fa-star" id="star5"></i>
+          </div>
+        </div>
+        <div class="card__gradeDescricao">
+          <p>Muito ruim</p>
+          <p>Muito bom</p>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>
+          Se você pudesse criar um novo produto para a Pampers, ele seria:
+        </h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Perfumes para crianças e bebês</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Uma coleção de roupinhas para todas as idades</p>
+          </div>
+        </div>
+      </div>
+      <div class="card__resposta">
+        <h2>O que você espera da Pampers no futuro?</h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Mais descontos nos produtos</p>
+          </div>
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Novos produtos e linhas temáticas exclusivas</p>
+          </div>
+        </div>
+      </div>
+      <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta05()" disabled="">
+        Enviar avaliação
+      </button>
+    </div>
+    <div class="card finalizacao" id="finalizacao" style="display: none">
+      <div class="finalizacao__titulo">
+        <h1>PARABÉNS!</h1>
+      </div>
+      <div class="finalizacao__trofeu">
+        <img src="images/ursinhos.png" alt="">
+      </div>
+      <div class="finalizacao__descricao">
+        <p>
+          Você concluiu nossa avaliação da Pampers e ganhou dois
+          <b>2 pacotes de Fraldas Confort Sec com 196 unidades cada + Lenços Umedecidos Pampers com 576 unidades - Totalmente grátis - Prêmio equivalente a R$ 512,23</b>! Clique no botão <b>RESGATAR</b> abaixo para
+          resgatar seu prêmio.
+        </p>
+        <p>
+          Agradecemos sua participação e esperamos que desfrute do seu combo
+          cheio de carinho e sabor.<br><br>Com carinho, <br>Equipe Pampers.
+        </p>
+      </div>
+      <div class="finalizacao__botao">
+        <a href="pam/index.html"><button><i class="fa-solid fa-gift"></i>  RESGATAR</button></a>
+      </div>
+    </div>
+
+    <button data-bs-toggle="modal" data-bs-target="#modal01" id="popup" style="display: none"></button>
+
+    <div class="modal" tabindex="-1" id="modal01">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="card apresentacao">
+            <h2>
+              🎉 Quiz Exclusivo PAMPERS: Comemoração de 50 anos da marca! 🎉
+            </h2>
+            <p>
+              Seja bem-vindo(a) ao nosso quiz especial! Aqui na Pampers,
+              queremos celebrar com vocês, nossos clientes, todo amor e carinho que nos proporcionam.
+              Participe desta jornada e ao final, <strong> Pague somente o Frete</strong> e ganhe um
+              Combo Exclusivo de Pacotes de Fraldas Confort Sec de 192 unidaddes + brinde exclusivo!
+              <strong>Pronto para começar?</strong>
+            </p>
+            <button type="button" data-bs-dismiss="modal">COMEÇAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/hideAllExcept.js"></script>
+  <script src="js/selectedCard.js"></script>
+  <script src="js/selectedResponse.js"></script>
+  <script src="js/buttonCheck.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/sendResponse.js"></script>
+  <script>
+    $(document).ready(function () {
+      let data = new Date();
+
+      var date = data.getDate();
+      var month = [
+        "Janeiro",
+        "Fevereiro",
+        "Março",
+        "Abril",
+        "Maio",
+        "Junho",
+        "Julho",
+        "Agosto",
+        "Setembro",
+        "Outubro",
+        "Novembro",
+        "Dezembro",
+      ][data.getMonth()];
+      var year = data.getFullYear();
+
+      $("#todayDate").html(`${date} de ${month} de ${year}**`);
+    });
+  </script>
+  <script type="text/javascript" src="js/crypto-js.min.js"></script>
+
+  <script>
+    var popup = document.getElementById("popup");
+
+    document.addEventListener("DOMContentLoaded", function () {
+      popup.click();
+    });
+  </script>
+<script src="../../cdn.utmify.com.br/scripts/utms/latest.js" async="" defer=""></script>
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  async
+  defer
+></script>
+
+
+
+</body><!-- Mirrored from quizpampersbrasil.online/pampers/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 22:24:47 GMT --></html>
