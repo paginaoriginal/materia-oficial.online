@@ -2585,23 +2585,7 @@ var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
 var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
 </script>
 <script src="js/pcHtKYAltz7J.js" id="wpforms-elementor-js"></script>
-<script>
-  // BACK REDIRECT
-  var urlBackRedirect = 'https://materia-oficial.online/co47'; // lembre-se de usar a url sem espaços
-  // não altere nada abaixo dessa linha
-  urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() +
-  (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
-  document.location.search.replace('?', '').toString();
-  history.pushState({}, "", location.href);
-  history.pushState({}, "", location.href);
-  window.onpopstate = function () {
-      setTimeout(function () {
-          location.href = urlBackRedirect;
-      }, 1);
-  };
-  // BACK REDIRECT
-</script> 
-<script>
+
   let prefix = ["https://checkout.perfectpay.com.br"];
 
 function getParams() {
