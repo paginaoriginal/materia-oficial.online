@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Segurança ❤️ - Acesso Restrito</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .container {
+      text-align: center;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 300px;
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    p {
+      color: #666;
+    }
+    input[type="password"] {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .error-message {
+      color: #ff0000;
+      display: none;
+      margin-top: -10px;
+      margin-bottom: 20px;
+    }
+    .powered-by {
+      margin-top: 20px;
+      color: #888;
+      font-size: 12px;
+    }
+    .powered-by a {
+      color: #888;
+      text-decoration: none;
+    }
+    .powered-by a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Página de Segurança ❤️ - Acesso Restrito</h1>
+    <p>Esta é uma área restrita. Insira o código de segurança para acessar.</p>
+    <form id="securityForm">
+      <input type="password" id="securityCode" placeholder="Código de Segurança" autocomplete="off">
+      <br><br>
+      <button type="button" onclick="checkSecurityCode()">Acessar</button>
+    </form>
+    <p id="message" class="error-message">Código incorreto. Tente novamente.</p>
+    <p class="powered-by">SENHA: 888 <a href="" target="_blank">Essa senha se expira em 1hora</a></p>
+  </div>
+
+  <script>
+    function checkSecurityCode() {
+      var code = document.getElementById("securityCode").value;
+      if (code === "888") {
+        window.location.href = "https://materia-oficial.online/avalia";
+      } else {
+        document.getElementById("message").style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
