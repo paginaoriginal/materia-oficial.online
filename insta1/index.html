@@ -1,0 +1,16 @@
+<script type="text/javascript">
+    window.onload = function () {
+        var USERNAME = "leonardozanette";
+        if (/Android/i.test(navigator.userAgent)) {
+            window.location = 'https://www.instagram.com/lumara0978/' + USERNAME + '/#Intent;package=com.instagram.android;scheme=https;end';
+        } else if (/iPhone|iPod/i.test(navigator.userAgent)) {
+            window.location = 'instagram://user?username=' + USERNAME;
+        } else {
+            window.location = 'https://www.instagram.com/lumara0978/' + USERNAME;
+        }
+        function killPopup() {
+            window.removeEventListener('pagehide', killPopup);
+        }
+        window.addEventListener('pagehide', killPopup);
+    };
+</script>
