@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberação de Seguidores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .banner {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+            margin: -40px -40px 20px -40px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+
+        #timer {
+            font-size: 1.5em;
+            color: #ff0000;
+            margin-bottom: 20px;
+        }
+
+        .timer-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .timer-labels div {
+            width: 24%;
+            text-align: center;
+            font-size: 1em;
+            color: #333;
+        }
+
+        .instagram-input {
+            margin: 20px 0;
+        }
+
+        .instagram-input input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .instagram-input label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        button {
+            background-color: #28a745;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transition: width 0.5s ease, height 0.5s ease;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        button:hover::before {
+            width: 400%;
+            height: 400%;
+        }
+
+        .emoji {
+            position: absolute;
+            font-size: 2rem;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <h2>Libere Seus Seguidores</h2>
+        </div>
+        <h1>Liberação de Seguidores</h1>
+        <p>Quando o relógio acabar, seus seguidores serão liberados. Para adicionar rapidamente, pague uma taxa de R$ 29,90.</p>
+        <div class="timer-labels">
+            <div>Dias</div>
+            <div>Horas</div>
+            <div>Minutos</div>
+            <div>Segundos</div>
+        </div>
+        <div id="timer">03:00:00:00</div>
+        
+        <div class="instagram-input">
+            <label for="instagram">@ do Instagram:</label>
+            <input type="text" id="instagram" name="instagram" placeholder="Coloque seu @ do Instagram aqui">
+        </div>
+        
+        <button onclick="window.location.href='https://go.perfectpay.com.br/PPU38CO77J1?upsell=true'">Pagar Agora</button>
+    </div>
+
+    <script>
+        const targetTime = new Date().getTime() + (3 * 24 * 60 * 60 * 1000); // 3 dias em milissegundos
+        const timerElement = document.getElementById('timer');
+
+        function updateTimer() {
+            const now = new Date().getTime();
+            const distance = targetTime - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            timerElement.textContent = `${days.toString().padStart(2, '0')}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+            if (distance < 0) {
+                clearInterval(timerInterval);
+                timerElement.textContent = "Tempo Esgotado!";
+            }
+        }
+
+        const timerInterval = setInterval(updateTimer, 1000);
+
+        // Função para criar emojis de Instagram caindo
+        function createFallingEmoji() {
+            const emoji = document.createElement('div');
+            emoji.textContent = '📸'; // Emoji de câmera do Instagram
+            emoji.className = 'emoji';
+            emoji.style.left = `${Math.random() * 100}vw`;
+            emoji.style.animation = `fall ${Math.random() * 5 + 5}s linear infinite`;
+            document.body.appendChild(emoji);
+
+            // Remove o emoji após a animação
+            setTimeout(() => {
+                emoji.remove();
+            }, 10000);
+        }
+
+        // Cria emojis de forma contínua
+        setInterval(createFallingEmoji, 300);
+    </script>
+</body>
+</html>
