@@ -99,19 +99,6 @@
          </div>
          <div style="position:fixed;z-index:9999;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none"></div>
    
-   <script>
-          var urlBackRedirect = "../promo/promo37.html"; // lembre-se de usar a url sem espaços
-          // não altere nada abaixo dessa linha
-          urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() +
-                  (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
-                  document.location.search.replace('?', '').toString();
-          history.pushState({}, "", location.href);
-          history.pushState({}, "", location.href);
-          window.onpopstate = function () {
-              setTimeout(function () {
-                  location.href = urlBackRedirect;
-              }, 1);
-          };
    </script>
     <script>
     // Função para verificar se o input está vazio e manipular o processo de envio
