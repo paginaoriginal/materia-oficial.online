@@ -1,0 +1,390 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <title>ProPlay - Signup</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+    <style>
+        @keyframes blink {
+            0% {
+                background-color: red;
+            }
+
+            50% {
+                background-color: darkred;
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+
+        .live-indicator {
+            animation: blink 5s infinite;
+        }
+    </style>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PNTKFMT9');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <link rel="preload" href="https://scripts.converteai.net/6c816720-b8d8-461f-8e79-fa4eeb642392/players/66e9b18b454613000b460dbf/player.js" as="script">
+    <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+    <link rel="preload" href="https://images.converteai.net/6c816720-b8d8-461f-8e79-fa4eeb642392/players/66e9b18b454613000b460dbf/thumbnail.jpg" as="image">
+    <link rel="preload" href="https://cdn.converteai.net/6c816720-b8d8-461f-8e79-fa4eeb642392/66e9b143454613000b460da4/main.m3u8" as="fetch">
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    <link rel="dns-prefetch" href="https://images.converteai.net">
+    <link rel="dns-prefetch" href="https://api.vturb.com.br">
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+            background-color: #1F1F1F;
+            color: #fff;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .absolute {
+            position: absolute;
+        }
+
+        .w100 {
+            width: 100%;
+        }
+
+        .h100 {
+            height: 100%;
+        }
+
+        .p16 {
+            padding: 16px;
+        }
+
+        .p30 {
+            padding: 30px;
+        }
+
+        .px24 {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        .py24 {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+
+        .mt16 {
+            margin-top: 16px;
+        }
+
+        .mt24 {
+            margin-top: 24px;
+        }
+
+        .mb16 {
+            margin-bottom: 16px;
+        }
+
+        .mb10 {
+            margin-bottom: 10px;
+        }
+
+        .mb24 {
+            margin-bottom: 24px;
+        }
+
+        .ml10 {
+            margin-left: 10px;
+        }
+
+        .mr10 {
+            margin-right: 10px;
+        }
+
+        .mt10 {
+            margin-top: 10px;
+        }
+
+        .mt30 {
+            margin-top: 30px;
+        }
+
+        .mb30 {
+            margin-bottom: 30px;
+        }
+
+        .my24 {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+
+        .mx24 {
+            margin-left: 24px;
+            margin-right: 24px;
+        }
+
+        .my30 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .tc {
+            text-align: center;
+        }
+
+        .cp {
+            color: #DA0C24;
+        }
+
+        .c-grey {
+            color: #757575;
+        }
+
+        .cw {
+            color: #fff;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-column {
+            flex-direction: column;
+        }
+
+        .justify-start {
+            justify-content: flex-start;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .justify-end {
+            justify-content: flex-end;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .align-center {
+            align-items: center;
+        }
+
+        .balance-container {
+            min-width: 97px;
+            height: 28px;
+            border-radius: 15px;
+            border: 1px solid #DA0C24;
+            background: #2B2B2B;
+
+        }
+
+        .load-container {
+            width: 100%;
+            background-color: #555;
+            height: 37px;
+            border-radius: 20px;
+            overflow: hidden;
+            text-align: left;
+            border: 1px solid #DA0C24;
+        }
+
+        #load-win {
+            height: 100%;
+            width: 0;
+            background: linear-gradient(to right, #740613, #DA0C24);
+            transition: width 600s;
+        }
+
+        .title::before {
+            content: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.9966 11.5425L21.9966 12.5009C21.9954 14.7471 21.2971 16.9328 20.0059 18.7319C18.7147 20.5311 16.8999 21.8472 14.8319 22.4841C12.764 23.121 10.5538 23.0445 8.53105 22.2661C6.50826 21.4876 4.78124 20.0489 3.60754 18.1645C2.43385 16.2801 1.87637 14.0509 2.01826 11.8095C2.16015 9.56813 2.99379 7.43455 4.39486 5.72699C5.79593 4.01944 7.68937 2.8294 9.79277 2.33436C11.8962 1.83932 14.0968 2.06581 16.0666 2.98004M21.9966 4.16754L11.9966 14.5946L8.99659 11.4696' stroke='%23009951' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            width: 22px;
+            height: 22px;
+            margin-right: 5px;
+        }
+    </style>
+<script>
+    window.onload = function () {
+        var links = document.getElementsByTagName("a");
+        var pageSearchParams = document.location.search.replace('?', '');
+
+        for (var i = 0, n = links.length; i < n; i++) {
+            var href = links[i].href.trim() +
+                (links[i].href.includes("?") ? '&' : '?') +
+                pageSearchParams;
+            links[i].href = href;
+        }
+    }
+</script><script type="text/javascript">
+    var newUrl = location.pathname + location.search;
+
+    (function (window, location) {
+        history.replaceState(null, document.title, newUrl + "#!/backbutton");
+        history.pushState(null, document.title, newUrl);
+        window.addEventListener("popstate", function () {
+            if (location.hash === "#!/backbutton") {
+                history.replaceState(null, document.title, newUrl);
+                setTimeout(function () {
+                    window.location.href = '/video1.html' + location.search;
+                }, 0);
+            }
+        }, false);
+    }(window, location));
+</script></head>
+
+
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNTKFMT9" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main style="overflow-y: scroll; height: 100vh;">
+        <div class="flex justify-between align-center p30" style=" background-color: rgba(1, 1, 1, .7);">
+            <div class="flex align-center">
+                <img class="mr10" src="images/menu-icon.png" height="28" width="28">
+                <img src="images/brand.png" height="24" width="100">
+            </div>
+
+            <div class="balance-container flex align-center justify-center">
+                <span style="font-size: 16px; font-weight: 600;"></span>
+            </div>
+        </div>
+        <section class="p16 flex flex-column justify-center align-center">
+            <div class="flex align-center justify-center" id="title" style="display: none;">
+                <span class="title flex align-center" style="font-size: 21px;">NOVO JOGO LOCALIZADO</span>
+            </div>
+
+            <!-- Cabeçalho com o botão de "Revelado" -->
+            <div id="headline" class="flex align-center justify-center mt16" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+                <div id="button" style="display: flex; align-items: center; justify-content: center; background-color: #2C6E49; border: 2px solid #4C956C; border-radius: 20px; padding: 5px 10px; margin-bottom: 10px;">
+                    <div class="live-indicator" style="width: 10px; height: 10px; background-color: red; border-radius: 50%; margin-right: 8px;">
+                    </div>
+                    <span style="color: white; font-weight: 600; font-size: 14px;">Revelado</span>
+                </div>
+                <span style="font-size: 22px; font-weight: 700;">GANHE PARA TESTAR JOGOS</span>
+            </div>
+
+            <!-- Subcabeçalho -->
+            <div id="subheadline" class="flex align-center justify-center mt10" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+                <span style="font-size: 14px; font-weight: 600;">Empresa Mexicana inaugura programa no Brasil graças ao
+                    Marco Legal dos Games</span>
+            </div>
+            <div class="w100 mt16">
+
+                <div id="vid_66f77921a77e4f000aba7900" style="position:relative;width:100%;padding: 56.25% 0 0;"> <img id="thumb_66f77921a77e4f000aba7900" src="https://images.converteai.net/ce67b45e-6e9e-45d3-9858-136825c1686d/players/66f77921a77e4f000aba7900/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"> <div id="backdrop_66f77921a77e4f000aba7900" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div> </div> <script type="text/javascript" id="scr_66f77921a77e4f000aba7900"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/ce67b45e-6e9e-45d3-9858-136825c1686d/players/66f77921a77e4f000aba7900/player.js", s.async=!0,document.head.appendChild(s); </script> <style> .elementor-element:has(#smartplayer) { width: 100%; } </style>
+
+
+            </div>
+
+            <div id="load-video" class="flex justify-center mt24 w100 ">
+                <div class="load-container relative">
+                    <span class="absolute" style="font-size: 14px;  top: 10px; left: 50%;transform: translateX(-50%);">Loading...</span>
+                    <div id="load-win">
+                    </div>
+                </div>
+            </div>
+
+            <div id="label-bellow-video" class="flex justify-center mt16">
+                <span style="font-size: 12px;">Aguarde para testar mais jogos...</span>
+            </div>
+
+
+        </section>
+        <footer></footer>
+    </main>
+
+    <script>
+
+        window.onload = function () {
+
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            //window.innerWidth > 600
+
+
+            if (!isMobile) {
+                document.body.style.display = 'none'
+            }
+
+            const loadBar = document?.getElementById('load-win');
+            loadBar.style.width = '100%';
+
+            setTimeout(function () {
+                document.getElementById('title').style.display = 'flex'
+                document.getElementById('load-video').style.display = 'none'
+                document.getElementById('label-bellow-video').style.display = 'none'
+            }, 1539000);
+        };
+
+    </script>
+
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proplay</title>
+    <script>
+        window.addEventListener('load', () => {
+            // Redirecionar se não for dispositivo móvel ou tela pequena
+            if (!/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && window.innerWidth > 800) {
+                window.location.href = "about:blank";
+            }
+
+            document.addEventListener('contextmenu', event => event.preventDefault());
+
+            document.addEventListener('keydown', (event) => {
+                if (event.ctrlKey && (event.key === 'u' || event.key === 'U' || event.key === 'o' || event.key === 'O')) {
+                    event.preventDefault();
+                }
+                if (event.key === 'F12' || (event.ctrlKey && event.shiftKey && event.key === 'I')) {
+                    event.preventDefault();
+                }
+            });
+
+            const devtoolsDetector = () => {
+                const devtools = new Image();
+                devtools.__defineGetter__('id', function () {
+                    while (true) { }
+                });
+                console.log(devtools);
+            };
+
+            setInterval(devtoolsDetector, 1000);
+
+            const confuseNetwork = () => {
+                setInterval(() => {
+                    fetch('data:text/plain,' + Math.random()).then(response => response.text()).then(text => console.log(text));
+                }, 1000);
+            };
+
+            devtoolsDetector();
+            confuseNetwork();
+        });
+    </script>
+
+
+</body></html>
